@@ -1,4 +1,3 @@
-# holbertonschool-web_front_end
 # HTML Basics - README
 
 ## Introduction
