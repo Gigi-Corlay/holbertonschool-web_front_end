@@ -1,5 +1,5 @@
 body {
-    color: #161616; /* texte principal */
+    color: #161616; /* main text */
   }
   
   a {
@@ -7,13 +7,33 @@ body {
   }
   
   .visually-hidden {
-    display: none; /* cacher les éléments */
+    display: none; /* hide the elements */
   }
   
   .card-category {
-    color: #D73953; /* couleur des catégories de cartes */
+    color: #D73953; /* card category colors */
   }
   
   .section-tagline {
-    color: #D73953; /* couleur des sous-titres de section */
+    color: #D73953; /* section subtitle color */
   }
+/*root element and define the following custom properties*/
+  :root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+  }
+/* section-tagline and card-category */
+.section-tagline,
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Body and liens */
+body,
+a {
+    color: var(--text-color);
+}
