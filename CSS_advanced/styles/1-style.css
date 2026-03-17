@@ -1,0 +1,19 @@
+body {
+    color: #161616; /* texte principal */
+  }
+  
+  a {
+    color: #161616; /* liens */
+  }
+  
+  .visually-hidden {
+    display: none; /* cacher les éléments */
+  }
+  
+  .card-category {
+    color: #D73953; /* couleur des catégories de cartes */
+  }
+  
+  .section-tagline {
+    color: #D73953; /* couleur des sous-titres de section */
+  }
