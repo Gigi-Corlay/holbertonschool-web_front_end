@@ -139,7 +139,16 @@
             </address>
 
             <!-- Preformatted text -->
-            <pre>&lt;h2&gt;My title&lt;/h2&gt;&lt;p&gt;Example paragraph&lt;/p&gt;</pre>
+            <pre>
+                <code>
+                    <h2>My title</h2>
+                    <p>
+                        Proin lacus turpis, feugiat sit amet sollicitudin non, volutpat in libero. 
+                        Aenean hendrerit ultrices nulla ac lobortis. Vestibulum consectetur nibh vel 
+                        ante rhoncus faucibus.
+                    </p>
+                </code>
+              </pre>
 
             <!-- Highlighted text -->
             <p>
@@ -200,24 +209,36 @@
             <header>
                 <h2>Video</h2>
             </header>
-
+        
             <!-- HTML5 video player -->
-            <video controls loop muted>
-                <source src="video.mp4" type="video/mp4" />
-                <p>Your browser does not support HTML5 video.</p>
+            <video
+                controls
+                loop
+                poster="https://intranet-projects-files.s3.amazonaws.com/webstack/thumbnail.jpg">
+                
+                <source 
+                    src="https://intranet-projects-files.s3.amazonaws.com/webstack/BigBuckBunny.mp4" 
+                    type="video/mp4">
+                
+                <!-- Fallback text -->
+                Sorry, your browser doesn't support HTML5 video.
             </video>
         </section>
-
+        
         <!-- Section: Audio -->
         <section>
             <header>
                 <h2>Audio</h2>
             </header>
-
+        
             <!-- HTML5 audio player -->
             <audio controls>
-                <source src="audio.mp3" type="audio/mpeg" />
-                <p>Your browser does not support the audio element.</p>
+                <source 
+                    src="https://intranet-projects-files.s3.amazonaws.com/webstack/TroubleChapter8_64kb.mp3" 
+                    type="audio/mpeg">
+                
+                <!-- Fallback text -->
+                Your browser does not support the audio element.
             </audio>
         </section>
 
