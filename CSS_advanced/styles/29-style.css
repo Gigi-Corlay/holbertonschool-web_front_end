@@ -50,7 +50,7 @@
     --nav-item-letter-spacing: 0.04em;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-white); /* corrigé */
+    --nav-item-link-hover: var(--color-white);
 
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
@@ -212,7 +212,10 @@ a[href]:active {
 .nav .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    position: relative;
+}
+
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
 }
 
 .nav .nav-link::before {
@@ -222,17 +225,13 @@ a[href]:active {
     left: 0;
     background-color: var(--color-white);
     width: 0;
-    height: 20%;
-    transition: width 0.3s ease;
+    height: 0.2rem;
+    transition: width 0.3s ease, background-color 0.3s ease;
 }
 
 .nav .nav-item:hover .nav-link::before {
     background-color: var(--color-primary);
     width: 100%;
-}
-
-.nav .nav-link:hover {
-    color: var(--nav-item-link-hover);
 }
 
 /* Section Hero */
@@ -323,6 +322,18 @@ a[href]:active {
 /* Visually hidden */
 .visually-hidden {
     display: none;
+}
+
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Common col- styles */
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
 }
 
 /* Clearfix */
