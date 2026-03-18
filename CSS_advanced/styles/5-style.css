@@ -1,54 +1,50 @@
-/* Root element: define custom properties */
+/* Custom properties (Variables) */
 :root {
-    /* Colors */
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
-
-    /* Font families */
     --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-    /* Font sizes */
     --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;      /* Used for body text */
+    --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
-}
-
-/* Set all fonts in html to 62.5% of normal size */
-html {
-    font-size: 62.5%;  /* Makes 1rem = 10px (if browser default is 16px) */
-}
-
-/* Body styles */
-body {
+  }
+  
+  /* Global styles */
+  html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* Reset to 10px */
+  }
+  
+  body {
     color: var(--text-color);
     font-family: var(--font-family-base);
-    font-size: var(--font-size-medium); /* Use medium font size from root variables */
-}
-
-/* Links */
-a {
+    font-size: var(--font-size-medium);
+  }
+  
+  a {
     color: var(--text-color);
-}
-
-/* Headings (h1–h6) use title font */
-h1, h2, h3, h4, h5, h6 {
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
-}
-
-/* Visually hidden elements */
-.visually-hidden {
+  }
+  
+  /* Utility classes */
+  .visually-hidden {
     display: none;
-}
-
-/* Card category and section tagline */
-.card-category,
-.section-tagline {
+  }
+  
+  .card-category {
     color: var(--color-primary);
-}
+  }
+  
+  .section-tagline {
+    color: var(--color-primary);
+  }
