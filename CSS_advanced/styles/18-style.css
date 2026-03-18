@@ -1,37 +1,34 @@
-/* =========================
-    Root: Custom properties for navigation
-   ========================= */
-    :root {
-    --nav-item-font-family: var(--font-family-title);    /* font for nav items */
-    --nav-item-font-weight: var(--font-weight-bold);    /* bold text */
-    --nav-item-font-size: var(--font-size-medium);      /* medium size */
-    --nav-item-letter-spacing: 0.04em;                 /* 4% of root element */
-    --nav-item-display: inline-block;                  /* display type */
-    --nav-item-margin: 0 0 3rem 0;                     /* bottom margin 3x root, others 0 */
-    --nav-item-link-hover: var(--color-primary);       /* hover color */
+/* Custom properties for nav items */
+:root {
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem; /* 4% of root (1rem = 10px at 62.5%) */
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
 }
 
-/* =========================
-    Navbar menu
-   ========================= */
+/* Navbar menu floats right */
 .navbar-menu {
-    float: right;   /* float the menu to the right */
+    float: right;
 }
 
-/* =========================
-    Nav container
-   ========================= */
-.nav {
-    margin: 0;         /* remove all margins */
-    padding: 0;        /* remove all padding */
-    list-style: none;  /* remove list bullets */
-    text-align: center;/* center align text */
+/* Navigation styling */
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-/* =========================
-    Nav items
-   ========================= */
-.nav .nav-item {
+nav ul {
+    list-style: none; /* remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation items */
+nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -40,16 +37,13 @@
     margin: var(--nav-item-margin);
 }
 
-/* =========================
-    Nav links
-   ========================= */
-.nav .nav-link {
+/* Navigation links */
+nav .nav-link {
     display: block;
-    /* top/bottom padding = half root font, left/right = full root font */
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem; /* top/bottom 0.5rem, left/right 1rem */
 }
 
-/* Hover effect on nav links */
-.nav .nav-link:hover {
+/* Hover effect for nav links */
+nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
