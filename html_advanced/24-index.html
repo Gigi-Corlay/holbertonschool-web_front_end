@@ -1,164 +1,227 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <title>Homepage - Techium</title>
-        <meta name="description" content="Techium is a digital agency">
-        <link rel="icon" type="image/x-icon" href="./favicon.ico">
-        <link rel="icon" type="image/png" href="./favicon.png">
-    </head>
-    <body>
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="utf-8" />
 
-        <!-- Header -->
-        <header>
-        <div>
-            <div>
-            <a href="/"><span>Techium</span></a>
-            </div>
-            <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#latest_news">Latest news</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            </nav>
-        </div>
-        </header>
+    <!-- Responsive design for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Main -->
-        <main>
-        <h1>Homepage</h1>
+    <!-- Page title and description -->
+    <title>Styleguide - Techium</title>
+    <meta name="description" content="Techium is a digital agency" />
 
-        <!-- Hero section -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+</head>
+
+<body>
+
+    <!-- Main content of the page -->
+    <main>
+
+        <!-- Section: Headings -->
         <section>
-            <div>
-            <h2>We help you build your brand!</h2>
-            <a href="#">Get started</a>
-            </div>
-        </section>
-
-        <!-- Service section-->
-        <section>
-            <div>
             <header>
-                <h2>Services</h2>
-                <p>We work with you</p>
+                <h2>Headings</h2>
             </header>
-            <div>
-                <h3><a href="#">Design & Concept</a></h3>
-                <h3><a href="#">Digital Strategy</a></h3>
-                <h3><a href="#">Content Strategy</a></h3>
-                <h3><a href="#">UX Design</a></h3>
-                <h3><a href="#">Web Development</a></h3>
-                <h3><a href="#">Social Media</a></h3>
-            </div>
-            </div>
+
+            <!-- Different heading levels -->
+            <h1>Heading level 1</h1>
+            <h2>Heading level 2</h2>
+            <h3>Heading level 3</h3>
+            <h4>Heading level 4</h4>
+            <h5>Heading level 5</h5>
+            <h6>Heading level 6</h6>
         </section>
 
-        <!-- Work section -->
+        <!-- Section: Paragraph -->
         <section>
-            <div>
             <header>
-                <h2>Works</h2>
-                <p>Take a look in our portfolio</p>
+                <h2>Paragraph</h2>
             </header>
-            <div>
-                <article><h3><a href="#">Interior Design</a></h3></article>
-                <article><h3><a href="#">Web Development</a></h3></article>
-                <article><h3><a href="#">Personal Brand</a></h3></article>
-            </div>
-            </div>
+
+            <!-- Grouping a title with its subtitle -->
+            <hgroup>
+                <h2>Heading with a subtitle</h2>
+                <p>This is my subtitle</p>
+            </hgroup>
+
+            <!-- Example paragraph -->
+            <p>
+                Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio
+                porttitor sem non mi integer non faucibus ornare mi ut ante amet
+                placerat aliquet.
+            </p>
         </section>
 
-        <!-- About Us section-->
+        <!-- Section: Lists -->
         <section>
-            <div>
             <header>
-                <h2>About Us</h2>
-                <p>Everything about us</p>
+                <h2>Lists</h2>
             </header>
+
             <div>
-                <h3>Who are we</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, omnis expedita! Eum, praesentium cumque accusantium rem, sit quaerat est nisi ratione, deserunt ducimus quidem iste dicta quibusdam atque maxime cum!</p>
-                <h3>Our culture</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, omnis expedita! Eum, praesentium cumque accusantium rem, sit quaerat est nisi ratione, deserunt ducimus quidem iste dicta quibusdam atque maxime cum!</p>
-                <h3>How we work</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, omnis expedita! Eum, praesentium cumque accusantium rem, sit quaerat est nisi ratione, deserunt ducimus quidem iste dicta quibusdam atque maxime cum!</p>
-            </div>
-            <a href="about.html">Learn more about us</a>
+                <!-- Unordered list -->
+                <h3>Unordered</h3>
+                <ul>
+                    <li>Dolor pulvinar etiam magna etiam.</li>
+                    <li>Sagittis adipiscing lorem eleifend.</li>
+                    <li>Felis enim feugiat dolore viverra.</li>
+                </ul>
+
+                <!-- Ordered list -->
+                <h3>Ordered</h3>
+                <ol>
+                    <li>Dolor pulvinar etiam magna etiam.</li>
+                    <li>Sagittis adipiscing lorem eleifend.</li>
+                    <li>Felis enim feugiat dolore viverra.</li>
+                </ol>
+
+                <!-- Definition list -->
+                <h3>Definition</h3>
+                <dl>
+                    <dt>Definition List title</dt>
+                    <dd>Definition text.</dd>
+                </dl>
             </div>
         </section>
 
-        <!-- Latest news section -->
+        <!-- Section: Horizontal rule -->
         <section>
-            <div>
             <header>
-                <h2>Latest news</h2>
+                <h2>Horizontal rule</h2>
             </header>
-            <div>
-                <article>
-                <p>Career</p>
-                <h3><a href="#">Hoc loco tenere se Triarius non potuit.</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id Sextilius factum negabat. Quo tandem modo? At eum nihili facit; Quae contraria sunt his, malane?</p>
-                </article>
-                <article>
-                <p>Digital Life</p>
-                <h3><a href="#">Ut alios omittam, hunc appello, quem ille unum secutus est.</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tum mihi Piso: Quid ergo? Tum ille: Ain tandem? Non autem hoc: igitur ne illud quidem. Sed quod proximum fuit non vidit. Nos commodius agimus. An nisi populari fama?</p>
-                </article>
-                <article>
-                <p>Social</p>
-                <h3><a href="#">Bestiarum vero nullum iudicium puto.</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non igitur bene. Quid enim est a Chrysippo praetermissum in Stoicis? Pugnant Stoici cum Peripateticis. Prioris generis est docilitas, memoria; Apparet statim, quae sint officia, quae actiones.</p>
-                </article>
-            </div>
-            </div>
+
+            <!-- Visual separator -->
+            <hr />
         </section>
 
-        <!-- Testimonials section -->
+        <!-- Section: Blockquotes -->
         <section>
-            <div>
             <header>
-                <h2>Testimonials</h2>
-                <p>We are more than a digital company</p>
+                <h2>Blockquotes</h2>
             </header>
+
+            <!-- Inline quote -->
             <div>
-                <article>Testimonial 1</article>
-                <article>Testimonial 2</article>
-                <article>Testimonial 3</article>
+                <h3>Inline quote</h3>
+                <q>Stay hungry. Stay foolish.</q>
             </div>
+
+            <!-- Block quote with proper semantic footer -->
+            <div>
+                <h3>Blockquote</h3>
+                <blockquote>
+                    <p>
+                        I will be the leader of a company that ends up being worth billions
+                        of dollars...
+                    </p>
+                    <footer>
+                        <cite>Kanye West, Musician</cite>
+                    </footer>
+                </blockquote>
             </div>
         </section>
 
-        <!-- Contact section -->
+        <!-- Section: Typography -->
         <section>
-            <div>
             <header>
-                <h2>Contact</h2>
-                <p>We like to know new people</p>
+                <h2>Typography</h2>
             </header>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id Sextilius factum negabat. Quo tandem modo? At eum nihili facit; Quae contraria sunt his, malane?</p>
-            </div>
-            <a href="contact.html">Get in touch</a>
-            </div>
-        </section>
-        </main>
 
-        <!-- Footer -->
-        <footer>
-        <div>
-            <ul>
-            <li><a href="https://www.facebook.com/HolbertonSchool/">Facebook</a></li>
-            <li><a href="https://twitter.com/holbertonschool">Twitter</a></li>
-            <li><a href="https://www.instagram.com/holbertonschool/">Instagram</a></li>
-            </ul>
-        </div>
-        </footer>
-    </body>
+            <!-- Address element -->
+            <address>
+                320 Stewart Avenue, Unit 12<br />
+                New York City NY 10001
+            </address>
+
+            <!-- Preformatted text -->
+            <pre>&lt;h2&gt;My title&lt;/h2&gt;&lt;p&gt;Example paragraph&lt;/p&gt;</pre>
+
+            <!-- Highlighted text -->
+            <p>
+                Example of <mark>highlighted</mark> text inside a paragraph.
+            </p>
+        </section>
+
+        <!-- Section: Table -->
+        <section>
+            <header>
+                <h2>Table</h2>
+            </header>
+
+            <table>
+                <caption>Star Wars Trilogy Data</caption>
+
+                <!-- Table header -->
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Director</th>
+                        <th scope="col">Release Date</th>
+                    </tr>
+                </thead>
+
+                <!-- Table body -->
+                <tbody>
+                    <tr>
+                        <th scope="row">A New Hope</th>
+                        <td>George Lucas</td>
+                        <td>1977</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section: Details -->
+        <section>
+            <header>
+                <h2>Details</h2>
+            </header>
+
+            <!-- Collapsible content -->
+            <details>
+                <summary>Show/Hide me</summary>
+                <p>Hidden content example.</p>
+            </details>
+
+            <!-- Open by default -->
+            <details open>
+                <summary>Always open</summary>
+                <p>Visible content example.</p>
+            </details>
+        </section>
+
+        <!-- Section: Video -->
+        <section>
+            <header>
+                <h2>Video</h2>
+            </header>
+
+            <!-- HTML5 video player -->
+            <video controls loop muted>
+                <source src="video.mp4" type="video/mp4" />
+                <p>Your browser does not support HTML5 video.</p>
+            </video>
+        </section>
+
+        <!-- Section: Audio -->
+        <section>
+            <header>
+                <h2>Audio</h2>
+            </header>
+
+            <!-- HTML5 audio player -->
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg" />
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </section>
+
+    </main>
+
+</body>
 </html>
