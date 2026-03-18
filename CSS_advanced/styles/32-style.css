@@ -23,9 +23,6 @@
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
 
-    --html-font-size: 62.5%;
-    --body-font-size: var(--font-size-medium);
-
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 
@@ -53,7 +50,7 @@
     --nav-item-letter-spacing: 0.04em;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-white);
+    --nav-item-link-hover: var(--color-white); /* corrigé */
 
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
@@ -79,14 +76,14 @@
 /* Base styles */
 html {
     font-family: var(--font-family-base);
-    font-size: var(--html-font-size);
+    font-size: 62.5%;
     line-height: 1.15;
 }
 
 body {
     margin: 0;
     color: var(--text-color);
-    font-size: var(--body-font-size);
+    font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
 }
@@ -122,6 +119,7 @@ a[href]:active {
     text-decoration: var(--button-text-decoration);
     transition: color var(--transition-duration) var(--transition-cubic-bezier),
                 background-color var(--transition-duration) var(--transition-cubic-bezier);
+
 }
 
 .button:hover {
@@ -231,7 +229,7 @@ a[href]:active {
     background-color: var(--color-white);
     width: 0;
     height: 0.2rem;
-    transition: width var(--transition-duration) var(--transition-cubic-bezier);
+    transition: width 0.3s ease;
 }
 
 .nav .nav-item:hover .nav-link::before {
@@ -265,8 +263,6 @@ a[href]:active {
     display: block;
     padding: 2rem;
     background-color: var(--color-light-grey);
-    transition: background-color var(--transition-duration) var(--transition-cubic-bezier),
-                color var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-services a:hover {
@@ -284,20 +280,6 @@ a[href]:active {
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
-}
-
-.card-testimonial .card-quote {
-    position: relative;
-}
-
-.card-testimonial .card-quote::before {
-    content: "\201C";
-    position: absolute;
-    top: -4.5rem;
-    left: -1rem;
-    color: #efeded;
-    font-size: 10rem;
-    z-index: -1;
 }
 
 .card-testimonial .card-quote cite {
@@ -327,7 +309,7 @@ a[href]:active {
     left: -0.1rem;
     right: -0.1rem;
     z-index: 1;
-    transition: background-color var(--transition-duration) var(--transition-cubic-bezier);
+    transition: background-color 0.3s ease;
 }
 
 .card-work:hover .card-inner {
@@ -340,7 +322,7 @@ a[href]:active {
     opacity: 0;
     height: 100%;
     position: relative;
-    transition: opacity var(--transition-duration) var(--transition-cubic-bezier);
+    transition: opacity 0.3s ease;
 }
 
 .card-work:hover .card-title {
@@ -363,12 +345,45 @@ a[href]:active {
     left: 0;
 }
 
+/* Card Testimonial Quote */
+.card-testimonial .card-quote {
+    position: relative;
+}
+
+.card-testimonial .card-quote::before {
+    content: "\201C";
+    position: absolute;
+    top: -4.5rem;
+    left: -1rem;
+    color: #efeded;
+    font-size: 10rem;
+    z-index: -1;
+}
+
+/* Card Work Transformations */
 .card-work:hover .card-image img {
     transform: scale(1.2);
+    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
     transform: scale(0.95);
+}
+
+/* Card Inner Transition */
+.card-work .card-inner {
+    transition: all var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Navigation items animation */
+.nav .nav-link::before {
+    transition: width var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Button background animation */
+.button:hover {
+    transition-duration: var(--transition-duration);
+    transition-property: color, background-color;
 }
 
 /* Columns */
@@ -382,7 +397,7 @@ a[href]:active {
 .row {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 [class^="col-"] {
