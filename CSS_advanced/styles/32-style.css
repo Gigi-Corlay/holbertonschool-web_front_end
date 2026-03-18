@@ -117,6 +117,9 @@ a[href]:active {
     font-size: var(--button-font-size);
     color: var(--button-color);
     text-decoration: var(--button-text-decoration);
+    transition: color var(--transition-duration) var(--transition-cubic-bezier),
+                background-color var(--transition-duration) var(--transition-cubic-bezier);
+
 }
 
 .button:hover {
@@ -225,7 +228,7 @@ a[href]:active {
     left: 0;
     background-color: var(--color-white);
     width: 0;
-    height: 20%;
+    height: 0.2rem;
     transition: width 0.3s ease;
 }
 
@@ -289,6 +292,7 @@ a[href]:active {
 .card-work .card-outer {
     position: relative;
     overflow: hidden;
+    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-image img {
@@ -296,6 +300,7 @@ a[href]:active {
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner {
