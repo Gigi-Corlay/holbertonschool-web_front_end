@@ -13,38 +13,38 @@
     --font-size-large: 1.8rem;
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
-  }
-  
+}
+
   /* Global styles */
-  html {
+html {
     scroll-behavior: smooth;
     font-size: 62.5%; /* Reset to 10px */
-  }
-  
-  body {
+}
+
+body {
     color: var(--text-color);
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
-  }
-  
-  a {
+}
+
+a {
     color: var(--text-color);
-  }
-  
+}
+
   /* Headings */
-  h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
-  }
-  
-  /* Utility classes */
-  .visually-hidden {
+}
+
+/* Utility classes */
+.visually-hidden {
     display: none;
-  }
-  
-  .card-category {
+}
+
+.card-category {
     color: var(--color-primary);
-  }
-  
-  .section-tagline {
+}
+
+.section-tagline {
     color: var(--color-primary);
-  }
+}
