@@ -53,36 +53,36 @@ body {
     line-height: var(--line-height-base);
 }
 
-/* Links (only anchors with href) */
+/* Links */
 a[href] {
     color: var(--text-color);
-    text-decoration: none; /* remove underline */
+    text-decoration: none;
 }
 
 a[href]:visited {
-    font-style: italic; /* italicize visited links */
+    font-style: italic;
 }
 
 a[href]:hover {
-    text-decoration: underline; /* underline on hover */
+    text-decoration: underline;
 }
 
 a[href]:active {
-    background-color: var(--color-light-grey); /* background color when active */
+    background-color: var(--color-light-grey);
 }
 
-/* Headings (h1–h6) use title font and bold weight */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
 
-/* Visually hidden elements */
+/* Visually hidden */
 .visually-hidden {
     display: none;
 }
 
-/* Section header alignment */
+/* Section header */
 .section-header {
     text-align: var(--section-header-align);
 }

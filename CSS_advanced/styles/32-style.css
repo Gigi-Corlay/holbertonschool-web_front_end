@@ -300,7 +300,6 @@ a[href]:active {
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
-    transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner {
@@ -333,7 +332,6 @@ a[href]:active {
     display: block;
     text-decoration: none;
     padding-top: 45%;
-    position: relative;
 }
 
 .card-work .card-title a::after {
