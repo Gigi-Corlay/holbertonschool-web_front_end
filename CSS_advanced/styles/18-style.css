@@ -1,6 +1,4 @@
-    /* 18-style.css */
-
-    /* Universal box-sizing */
+   /* Universal box-sizing */
     *, *::before, *::after {
         box-sizing: border-box;
     }
